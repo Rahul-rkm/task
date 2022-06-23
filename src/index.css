@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +10,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* blue : #0079ec; dark blue in tick : #0082fb; green: #2ccb88 */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* the background */
+body::before {
+  content: ' ';
+  background-color: #0079ec;
+  /* position: fixed; */
+  position: absolute;
+  width: 100%;
+  height: 38%;
+  z-index: -10;
+  top: 0;
 }
 
 code {
